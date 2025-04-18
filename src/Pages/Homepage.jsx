@@ -6,8 +6,8 @@ import HostingPlans from '../Components/HostingPlans/HostingPlans';
 import Controls from '../Components/Controls/Controls';
 import Faq from '../Components/Faq/Faq';
 import banner from '.././assets/banner-img.png'
-import google from '.././assets/google.gif'
-import microsoft from '.././assets/microsoft.gif'
+import google from '.././assets/Google.gif'
+import microsoft from '.././assets/Microsoft.gif'
 import mail from '.././assets/Mail Letter.gif'
 import Cloud from '.././assets/Cloud downloading.gif'
 import shield from '.././assets/shield.gif'
