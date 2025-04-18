@@ -39,7 +39,7 @@ const Testimonials = () => {
   const items = testimonials.map((testimonial, index) => (
     <div
       key={index}
-      className="mt-2 shadow-[0_0_2px_1px_rgba(0,0,255,0.4)] hover:shadow-[0_0_5px_2px_rgba(0,0,255,0.4)] rounded-xl p-6 max-w-sm mx-4 flex flex-col items-center text-center space-y-4 mb-8"
+      className="mt-2 shadow-[0_0_2px_1px_rgba(0,0,255,0.4)] hover:shadow-[0_0_5px_2px_rgba(0,0,255,0.4)] rounded-xl p-6 max-w-sm mx-4 flex flex-col items-center text-center space-y-4 mb-8 bg-[#c5dfc8]"
     >
       <img
         src='https://www.tizzycloud.com/landing-page/images/testimonial/avatar-user.png'
@@ -47,15 +47,15 @@ const Testimonials = () => {
         className="w-20 h-20 object-cover rounded-full shadow-md"
       />
       <h3 className="text-lg font-bold text-gray-800">{testimonial.name}</h3>
-      <p className="text-sm text-indigo-500 font-medium">{testimonial.position}</p>
+      <p className="text-sm text-gray-800 font-medium">{testimonial.position}</p>
       <p className="text-sm text-gray-600 italic">“{testimonial.message}”</p>
     </div>
   ));
 
   return (
-    <div className="py-10 w-full">
+    <div className="py-5 w-full">
 
-      <h2 className="text-3xl font-bold text-center mb-6 text-amber-600 mx-5">Some Awesome Words by Our Customers.</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 text-gray-950 mx-5">Some Awesome Words by Our Customers.</h2>
       <AliceCarousel
         mouseTracking
         items={items}

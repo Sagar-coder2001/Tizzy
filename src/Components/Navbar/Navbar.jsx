@@ -8,11 +8,11 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <nav className="bg-[#D4E7C5] shadow-md w-full fixed top-0 left-0 z-60">
+        <nav className="bg-[#a1cea2] shadow-md w-full fixed top-0 left-0 z-60">
             <div className="max-w-screen-xl mx-auto px-4 lg:px-6 py-3 flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex items-center space-x-2">
-                    <img src={logo} alt="Tizzy Logo" className="h-7" />
+                    <img src={logo} alt="Tizzy Logo" className="h-10" />
                     {/* <span className="text-xl font-bold text-blue-600">TIZ<span className="text-orange-400">Z</span>Y</span> */}
                 </div>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
 
                         {/* Side Menu */}
                         <motion.div
-                            className="fixed top-1/2 right-0 transform -translate-y-1/2 w-72 h-[95%] bg-gradient-to-b from-white to-blue-50 shadow-2xl z-50 p-6 rounded-l-2xl flex flex-col justify-between"
+                            className="fixed top-1/2 right-0 transform -translate-y-1/2 w-72 h-[95%] bg-[#c5dfc8] shadow-2xl z-50 p-6 rounded-l-2xl flex flex-col justify-between"
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}

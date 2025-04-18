@@ -17,12 +17,12 @@ import back from '../../assets/back.png'
 export default function Footer() {
   return (
 
-    <footer className="bg-[#BAC7A7] py-10 px-5">
+    <footer className="bg-[#a1cea2] py-10 px-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-md text-gray-700">
         {/* Left section */}
         <div>
           <img src={logo} alt="Tizzy Logo" className="h-10 mb-3 text-xl" />
-          <p className='text-lg font-sans'>
+          <p className='text-lg font-sans text-gray-950'>
             Tizzy Cloud is a team of enthusiastic techies specialized in Cloud Computing
             services. Since inception we are focused on educating rather just selling services.
           </p>

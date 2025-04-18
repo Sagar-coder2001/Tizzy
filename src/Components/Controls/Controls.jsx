@@ -52,7 +52,7 @@ export default function Controls() {
           {features.map((item, index) => (
             <li
               key={index}
-              className={`cursor-pointer p-3 rounded-lg transition-colors ${
+              className={`cursor-pointer p-3 text-gray-950 font-bold rounded-lg transition-colors ${
                 selected === index
                   ? 'bg-[#E1F0DA] text-blue-600 font-semibold  shadow-[0_0_5px_0px_rgba(0,0,255,0.4)] hover:shadow-[0_0_5px_2px_rgba(0,0,255,0.4)]'
                   : 'hover:bg-gray-100'
@@ -83,7 +83,7 @@ export default function Controls() {
         initial={{ opacity: 0, y:-80 }}
         animate={{ opacity: 1,y:0 }}
         transition={{ duration: 1 }}
-        className="hidden md:block w-full md:w-2/3 bg-white p-6 rounded-lg shadow"
+        className="hidden md:block w-full md:w-2/3 bg-[#c5dfc8] p-6 rounded-lg shadow"
       >
         <h2 className="text-2xl font-bold mb-4 text-gray-800">
           {features[selected].title}

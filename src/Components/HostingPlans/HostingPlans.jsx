@@ -19,8 +19,8 @@ const plans = [
 
 const HostingPlans = () => {
     return (
-        <div className="max-w-6xl mx-auto px-4 py-12 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-green-400">
+        <div className="max-w-6xl mx-auto px-4 py-5 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-grey-900">
                 Tizzy® Cloud Business Email Hosting Plans
             </h2>
             <div className="flex justify-center items-center mb-8">
@@ -34,8 +34,7 @@ const HostingPlans = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: index * 0.3 }}
-                        style={{backgroundColor:'whitesmoke'}}
-                        className="p-6 rounded-xl shadow-xl relative hover:scale-105 transition-transform"
+                        className="p-6 rounded-xl shadow-xl relative hover:scale-105 transition-transform bg-[#c5dfc8]"
                     >
                         <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
                         {plan.icon}

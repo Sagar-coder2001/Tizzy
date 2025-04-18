@@ -37,10 +37,10 @@ export default function Faq() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12 ">
-      <h2 className="text-3xl font-bold text-center text-blue-400 mb-2">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
         Frequently Asked Questions
       </h2>
-      <p className="text-center text-gray-600 mb-8 ">
+      <p className="text-center text-white mb-8 ">
         We are glad to answer the frequently asked questions. You can email us on{' '}
         <a href="mailto:sales@tizzycloud.com" className="text-blue-500 underline">
           sales@tizzycloud.com
@@ -59,16 +59,16 @@ export default function Faq() {
               onClick={() => toggleFAQ(index)}
               className="flex justify-between items-center w-full text-left"
             >
-              <span className="text-base font-medium text-gray-800">
+              <span className="text-base font-medium text-white">
                 {faq.question}
               </span>
-              <span className="text-blue-500">
+              <span className="text-white">
                 {activeIndex === index ? <FaMinus /> : <FaPlus />}
               </span>
             </button>
 
             {activeIndex === index && (
-              <div className="mt-3 text-sm text-gray-600">{faq.answer}</div>
+              <div className="mt-3 text-sm text-white">{faq.answer}</div>
             )}
           </div>
         ))}
