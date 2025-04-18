@@ -34,7 +34,8 @@ const HostingPlans = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: index * 0.3 }}
-                        className="bg-white p-6 rounded-xl shadow-xl relative hover:scale-105 transition-transform"
+                        style={{backgroundColor:'whitesmoke'}}
+                        className="p-6 rounded-xl shadow-xl relative hover:scale-105 transition-transform"
                     >
                         <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
                         {plan.icon}

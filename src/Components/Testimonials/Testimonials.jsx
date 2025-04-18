@@ -39,7 +39,7 @@ const Testimonials = () => {
   const items = testimonials.map((testimonial, index) => (
     <div
       key={index}
-      className="bg-white shadow-xl rounded-xl p-6 max-w-sm mx-4 flex flex-col items-center text-center space-y-4 mb-8"
+      className="mt-2 shadow-[0_0_2px_1px_rgba(0,0,255,0.4)] hover:shadow-[0_0_5px_2px_rgba(0,0,255,0.4)] rounded-xl p-6 max-w-sm mx-4 flex flex-col items-center text-center space-y-4 mb-8"
     >
       <img
         src='https://www.tizzycloud.com/landing-page/images/testimonial/avatar-user.png'
@@ -53,7 +53,7 @@ const Testimonials = () => {
   ));
 
   return (
-    <div className="py-10 w-full bg-gradient-to-br from-yellow-50 to-white">
+    <div className="py-10 w-full">
 
       <h2 className="text-3xl font-bold text-center mb-6 text-amber-600 mx-5">Some Awesome Words by Our Customers.</h2>
       <AliceCarousel

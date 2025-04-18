@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import desktop from '../../assets/webmail.png'
-import fast from '../../assets/fast.png'
-import spam from '../../assets/spam.png'
-import DNS from '../../assets/DNS.png'
-import plesk from '../../assets/plesk.png'
-import security from '../../assets/security.png'
-
+import desktop from '../../assets/webmail.png';
+import fast from '../../assets/fast.png';
+import spam from '../../assets/spam.png';
+import DNS from '../../assets/DNS.png';
+import plesk from '../../assets/plesk.png';
+import security from '../../assets/security.png';
 
 const features = [
   {
@@ -43,7 +42,7 @@ const features = [
 ];
 
 export default function Controls() {
-  const [selected, setSelected] = useState(4); // Default selected is 5th item
+  const [selected, setSelected] = useState(4);
 
   return (
     <div className="flex flex-col md:flex-row p-4 md:p-10 gap-5">
@@ -55,24 +54,36 @@ export default function Controls() {
               key={index}
               className={`cursor-pointer p-3 rounded-lg transition-colors ${
                 selected === index
-                  ? 'bg-blue-100 text-blue-600 font-semibold'
+                  ? 'bg-[#E1F0DA] text-blue-600 font-semibold  shadow-[0_0_5px_0px_rgba(0,0,255,0.4)] hover:shadow-[0_0_5px_2px_rgba(0,0,255,0.4)]'
                   : 'hover:bg-gray-100'
               }`}
               onClick={() => setSelected(index)}
             >
-              {item.title}
+              <div>{item.title}</div>
+
+              {/* Mobile: show description + image below selected item */}
+              {selected === index && (
+                <div className="block md:hidden mt-4">
+                  <p className="text-gray-600 mb-2">{item.description}</p>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full max-h-[200px] object-contain"
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Right Content Area */}
+      {/* Desktop: Right Content Area */}
       <motion.div
         key={selected}
-        initial={{ opacity: 0,  }}
-        animate={{ opacity: 1,}}
+        initial={{ opacity: 0, y:-80 }}
+        animate={{ opacity: 1,y:0 }}
         transition={{ duration: 1 }}
-        className="w-full md:w-2/3 bg-white p-6 rounded-lg shadow"
+        className="hidden md:block w-full md:w-2/3 bg-white p-6 rounded-lg shadow"
       >
         <h2 className="text-2xl font-bold mb-4 text-gray-800">
           {features[selected].title}

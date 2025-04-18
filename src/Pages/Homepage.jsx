@@ -10,19 +10,21 @@ import google from '.././assets/google-partner.png'
 import microsoft from '.././assets/microsoft-partner.png'
 import mail from '.././assets/Mail Letter.gif'
 import Cloud from '.././assets/Cloud downloading.gif'
+import shield from '.././assets/shield.gif'
+
 
 
 
 const Homepage = () => {
 
   const services = [
-    { img: mail, label: 'Secure Email', desc: 'Fastest Outlokk any Email Application Sync Speed' },
-    { img: Cloud, label: 'Cloud Storage', desc: 'Automated 30 Days Scheduled Backup on AWS s3 Bucket' },
-    { img: mail, label: '24/7 Support', desc: 'AWS Foundational Security Best Practices CIS AWS Foundation Benchmark & PCI DSS' },
+    { img: mail, label: 'Email Send/Recive Speed', desc: 'Fastest Outlokk any Email Application Sync Speed' },
+    { img: Cloud, label: 'Backup And Restore', desc: 'Automated 30 Days Scheduled Backup on AWS s3 Bucket' },
+    { img: shield, label: 'AWS Security Standards', desc: 'AWS Foundational Security Best Practices CIS AWS Foundation Benchmark & PCI DSS' },
   ];
 
   return (
-    <section className="mt-8 w-full bg-gradient-to-b py-10 sm:px-10" style={{ background: 'linear-gradient(to bottom, #fcf5f5, #f5fcf5, #f5f8fc, #fcfcf5)' }}>
+    <section className="mt-8 w-full bg-gradient-to-b py-10 sm:px-10" style={{ backgroundColor:'#E1F0DA' }}>
 
       <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row-reverse items-center justify-between gap-10">
 
@@ -91,7 +93,7 @@ const Homepage = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition p-6 flex items-center gap-4"
+              className="rounded-2xl transition shadow-[0_0_5px_0px_rgba(0,0,255,0.4)] hover:shadow-[0_0_5px_2px_rgba(0,0,255,0.4)] p-6 flex items-center gap-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -133,8 +135,11 @@ const Homepage = () => {
           animate={{ opacity: 1, x: 0 }}  // move up to original position
           transition={{ duration: 1, ease: "easeOut" }}
           className="mt-5">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius maxime culpa quaerat provident asperiores adipisci suscipit quidem dicta cupiditate doloremque pariatur ad assumenda, temporibus magnam placeat deleniti ullam id non nesciunt animi voluptas magni dolores! Qui eum, quaerat perferendis at modi culpa possimus dolorem quidem labore quia alias in voluptate, eveniet
-
+          <p>
+            Tizzy Mail can be settup automatic or manual modeon any device andin any email application.<br/>
+            it also her a user freindly webmail interface to access from browser.<br/>
+            creating your buisness email addressis very fast and easy on tizzy mail for eg.<br/>
+            sales@yourcompanyname.com
           </p>
         </motion.div>
         <button className="mt-8 px-6 py-2 text-blue-600 font-semibold border-b-2 border-blue-600 cursor-pointer bg-blue-100 transition-all duration-300 rounded">
